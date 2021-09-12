@@ -11,6 +11,7 @@
   width: 600px;
   border-left:  1px solid lightgray;
   border-right: 1px solid lightgray;
+  
 }
 
 .aside {
@@ -25,6 +26,9 @@
 
 .page__main {
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  
 }
 
 .header{
@@ -149,10 +153,28 @@
 
 .svg-buttons{
   margin-right: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.svg-buttons__wrapper{
+  
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.svg-buttons__wrapper:hover{
+  background-color:rgba(29, 155, 240, 0.1);
+  border-radius: 100%;
 }
 
 .newtweet-icons{
-  margin-right: 1rem;
+  
   width: 20px;
   height: 20px;
   color: rgb(29, 155, 240);
@@ -169,13 +191,20 @@
   margin-top: 8px;
   background-color:unset;
   color: white;
-  
+  font-weight: 700;
 }
 
+
 .button-secondary{
+  
+  min-width: 36px;
+  min-height: 36px;
+  padding: 0 16px 0 16px;
   background-color: rgb(29, 155, 240);
+  opacity: 0.5;
   border-radius: 50px;
   width: 80px;
+  cursor: pointer;
 }
 
 
@@ -426,6 +455,243 @@
 
 
 /* Main Feed Ends */
+
+
+/* Begin - newsfeed */
+
+
+.tweet-container{
+  margin-top: 0.5rem;
+  border-bottom: 1px solid rgba(185, 202, 211, 0.3);
+  height: 544px;
+  background-color: white;
+}
+
+.tweet-container:hover{
+  background-color: #ecececc4;
+}
+
+.tweet{
+  /* border-bottom: 1px solid lightgrey; */
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content:end;
+  
+}
+
+.tweet-newsfeed{
+  /* border-top: 1px solid lightgrey; */
+    
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.tweet:hover{
+  /* background-color: rgb(233, 233, 233, 0.3); */
+  cursor: pointer;
+}
+
+
+.tweet__author-img{
+/*   border: 1px solid red; */
+  padding: 10px;
+  height: 79%;
+}
+
+.author-img{
+  position: relative;
+  height: 3rem;
+  border-radius: 100%;
+}
+
+.author-img:hover{
+  box-shadow: 1px 1px 1px 1px #808080;
+
+}
+
+
+.publisher-heading{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 20px;
+}
+
+.publisher-heading-left{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.publisher-heading-right__more{
+  width: 18.75px;
+  height: 18.75px;
+}
+
+.publisher-heading-items{
+  padding-right: 5px;
+  
+}
+
+.hv-underline:hover{
+  text-decoration: underline;
+}
+
+.cl-grey{
+  color: rgb(83, 100, 113);
+  fill: currentColor;
+}
+
+.publisher-heading__name{
+  font-weight: bold;
+}
+
+.publisher-heading__name:hover{
+  text-decoration: underline;
+}
+
+.verified-profile-svg{
+  width: 16.43px;
+  height: 16.42px;
+  color: rgb(29, 155, 240);
+  fill: currentColor;
+}
+
+.article-figure-container{
+  -moz-box-direction: normal;
+  -moz-box-orient: vertical;
+  align-items: stretch;
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  position: relative;
+  z-index: 0;
+  -moz-box-align: stretch;
+  flex-basis: auto;
+  padding: 0px;
+  cursor: pointer;
+}
+
+.article-figure-container{
+  border-radius: 16px;
+  overflow: hidden;
+  outline-style: none;
+  border-color: rgb(207, 217, 222);
+  border-width: 1px;
+  border-style: solid;
+  cursor: pointer;
+  height: 386px;
+  width: 504px;
+  
+}
+
+.container__figure{
+  
+  display: flex;
+  flex-direction: column;
+}
+
+.article-figure-wrapper{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-left: 0px;
+  margin-top: 0px;
+
+}
+
+.article-figure{
+  width: 504px;
+  height: 263px;
+ 
+    
+}
+
+.container__link{
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+}
+
+.container__link:hover{
+  background-color: rgb(72, 128, 172, 0.1);
+}
+
+.brief-desc{
+  color: rgb(83, 100, 113);
+}
+
+.url-link{
+  display: flex;
+  flex-direction: row;
+}
+
+.tweet__article-container{
+  /* border: 1px solid blue; */
+  height: 85%;
+  width: 100%;
+  margin-top: 10px;
+  
+}
+
+.attachment-svg{
+  width: 16.25px;
+  height: 16.25px;
+  color: rgb(83, 100, 113);
+  fill: currentColor;
+}
+
+.attachment-link{
+  color: rgb(83, 100, 113);
+  fill: currentColor;
+}
+
+.figure{
+  width: 504px;
+  height: 263px;
+}
+
+.container__content{
+  font-family: inherit;
+  font-size: 15px;
+  color: black;
+  width: 500px;
+  padding-bottom: 12px;
+}
+
+.tweet__controllers{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.controllers{
+  margin-left: 17%;
+}
+
+.controller-svg{
+  width: 18.75px;
+  height: 18.75px;
+  
+}
+
+
+
+
+/* End- news feed */
+
+@media all and (max-width: 699px){
+  .newtweet-icons:not(:nth-child(1), :nth-child(2), :nth-child(4)){
+    display: none;
+  }
+}
 
 @media all and (max-width: 992px){
 
