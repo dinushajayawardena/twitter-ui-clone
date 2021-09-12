@@ -1,6 +1,7 @@
 .page {
   display: flex;
   justify-content: center;
+  background-color: white;
 }
 
 .page__nav {
@@ -28,7 +29,7 @@
   background-color: white;
   display: flex;
   flex-direction: column;
-  
+  height: 2000px;
 }
 
 .header{
@@ -36,6 +37,7 @@
   position: sticky;
   top: -0.5px;
   background-color:white;
+  z-index: 9999;
   
 }
 
@@ -462,21 +464,21 @@
 
 .tweet-container{
   margin-top: 0.5rem;
-  border-bottom: 1px solid rgba(185, 202, 211, 0.3);
   height: 544px;
   background-color: white;
 }
 
-.tweet-container:hover{
+.tweet:hover{
   background-color: #ecececc4;
 }
 
 .tweet{
   /* border-bottom: 1px solid lightgrey; */
-  margin-bottom: 20px;
+  padding-bottom: 20px;
   display: flex;
   flex-direction: column;
   justify-content:end;
+  border-bottom: 1px solid rgba(185, 202, 211, 0.3);
   
 }
 
@@ -543,6 +545,74 @@
 .cl-grey{
   color: rgb(83, 100, 113);
   fill: currentColor;
+  font-size: 13px;
+}
+
+.controller{
+  display: flex;
+  align-items: center;
+}
+
+.svg-wrapper{
+  position: relative;
+  width: 32px;
+  height: 32px;
+  padding-left: 7px;
+  padding-top: 5px;
+
+}
+
+.cl-grey:hover{
+  
+}
+
+.camount{
+  margin-left: 10px;
+}
+
+.creply:hover{
+  color: rgb(29, 155, 240);
+  fill: currentColor;
+  
+}
+
+.svg-wrapper-reply:hover{
+  background-color: rgba(29, 155, 240, 0.2);
+  border-radius: 20px;
+
+}
+
+.cretweet:hover{
+  color: rgb(21, 206, 166);
+  fill: currentColor;
+}
+
+.svg-wrapper-retweet:hover{
+  background-color: rgba(21, 206, 166, 0.2);
+  border-radius: 20px;
+
+}
+
+.clike:hover{
+  color: rgb(202, 85, 64);
+  fill: currentColor;
+}
+
+.svg-wrapper-like:hover{
+  background-color: rgba(202, 85, 64, 0.2);
+  border-radius: 20px;
+
+}
+
+.cshare:hover{
+  color: rgb(29, 155, 240);
+  fill: currentColor;
+}
+
+.svg-wrapper-share:hover{
+  background-color: rgba(29, 155, 240, 0.2);
+  border-radius: 20px;
+
 }
 
 .publisher-heading__name{
@@ -619,6 +689,7 @@
   display: flex;
   flex-direction: column;
   padding: 12px;
+  margin-top: -10px;
 }
 
 .container__link:hover{
@@ -674,6 +745,7 @@
 
 .controllers{
   margin-left: 17%;
+ 
 }
 
 .controller-svg{
