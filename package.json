@@ -7,7 +7,7 @@
   "author": "Dinusha Jayawardena <dinusha@ijse.lk> (ijse.lk)",
   "scripts": {
     "clear": "rm -rf docs",
-    "build": "parcel build index.html 404.html --out-dir docs --public-url /twitter-clone/",
+    "build": "parcel build index.html 404.html --out-dir docs --public-url /twitter-ui-clone/",
     "dev": "parcel index.html --open",
     "start": "npm run build && npm run dev"
   },
